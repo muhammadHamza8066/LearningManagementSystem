@@ -47,7 +47,7 @@ function test(name, condition, detail) {
 
 async function run() {
   console.log("=".repeat(60));
-  console.log("  LearnForge LMS - Full Test Suite (Phase 1-3)");
+  console.log("  AcademILMS - Full Test Suite (Phase 1-5)");
   console.log("=".repeat(60));
 
   // PHASE 1: AUTH

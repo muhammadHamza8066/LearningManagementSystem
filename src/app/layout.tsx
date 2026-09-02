@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "LearnForge - Modern Learning Management System",
+  title: "AcademILMS - Modern Learning Management System",
   description:
     "A full-featured LMS with course creation, quizzes, progress tracking, certificates, and SCORM support. Built for instructors and students.",
 };

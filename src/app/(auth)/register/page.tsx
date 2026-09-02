@@ -66,7 +66,7 @@ export default function RegisterPage() {
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/20">
             <GraduationCap className="h-5 w-5 text-white" />
           </div>
-          <span className="text-xl font-bold text-white">LearnForge</span>
+          <span className="text-xl font-bold text-white">AcademILMS</span>
         </Link>
         <div>
           <h2 className="text-4xl font-extrabold text-white">

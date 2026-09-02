@@ -42,7 +42,7 @@ export default function CertificateViewPage() {
             <div>
               <div className="flex items-center justify-center gap-2 text-amber-600">
                 <Award className="h-8 w-8" />
-                <span className="text-lg font-bold tracking-widest uppercase">LearnForge</span>
+                <span className="text-lg font-bold tracking-widest uppercase">AcademILMS</span>
               </div>
             </div>
             <div className="space-y-6">

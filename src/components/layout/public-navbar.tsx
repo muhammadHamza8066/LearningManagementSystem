@@ -22,7 +22,7 @@ export function PublicNavbar() {
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-600 shadow-sm">
             <GraduationCap className="h-5 w-5 text-white" />
           </div>
-          <span className="text-xl font-bold text-gray-900">LearnForge</span>
+          <span className="text-xl font-bold text-gray-900">AcademILMS</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

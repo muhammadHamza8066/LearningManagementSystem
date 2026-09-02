@@ -329,7 +329,7 @@ export default function HomePage() {
                 Ready to start teaching or learning?
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-lg text-blue-100">
-                Join thousands of students and instructors on LearnForge.
+                Join thousands of students and instructors on AcademILMS.
                 Create your free account today.
               </p>
               <div className="mt-8 flex items-center justify-center gap-4">
@@ -353,7 +353,7 @@ export default function HomePage() {
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-sm font-bold text-white">
               LF
             </div>
-            <span className="text-lg font-bold text-gray-900">LearnForge</span>
+            <span className="text-lg font-bold text-gray-900">AcademILMS</span>
           </div>
           <p className="text-sm text-gray-500">
             Built by Muhammad Hamza. Full-stack LMS portfolio project.

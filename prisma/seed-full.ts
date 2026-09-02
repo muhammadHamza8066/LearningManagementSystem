@@ -4,7 +4,7 @@ import bcrypt from "bcryptjs";
 const prisma = new PrismaClient();
 
 async function main() {
-  console.log("Seeding LearnForge with full course content...\n");
+  console.log("Seeding AcademILMS with full course content...\n");
 
   // ============ USERS ============
   const adminPw = await bcrypt.hash("admin123", 12);

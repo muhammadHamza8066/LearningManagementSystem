@@ -69,8 +69,8 @@ export function Sidebar({ mobileOpen, onMobileClose }: SidebarProps) {
         <Link href="/" className="flex items-center gap-2.5">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-sm font-bold text-white">
             LF
-          </div>
-          <span className="text-lg font-bold text-gray-900">LearnForge</span>
+            </div>
+            <span className="text-lg font-bold text-gray-900">AcademILMS</span>
         </Link>
         {onMobileClose && (
           <button onClick={onMobileClose} className="lg:hidden p-1 text-gray-400 hover:text-gray-600">
