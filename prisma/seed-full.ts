@@ -406,7 +406,7 @@ async function main() {
             questions: {
               create: modData.quiz.questions.map((q, qi) => ({
                 text: q.text,
-                type: q.type,
+                type: q.type as QuestionType,
                 points: 1,
                 position: qi,
                 options: { create: q.options },
