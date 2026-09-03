@@ -5,14 +5,15 @@ import { db } from "@/lib/db";
 
 export async function POST(
   req: Request,
-  { params }: { params: { courseId: string; moduleId: string } }
+  { params }: { params: Promise<{ courseId: string; moduleId: string }> }
 ) {
   try {
+    const resolvedParams = await params;
     const session = await getServerSession(authOptions);
     if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
     const quiz = await db.quiz.findUnique({
-      where: { moduleId: params.moduleId },
+      where: { moduleId: resolvedParams.moduleId },
       include: {
         questions: {
           include: { options: true },

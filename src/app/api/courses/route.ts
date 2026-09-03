@@ -43,7 +43,7 @@ export async function GET(req: Request) {
       where.level = level;
     }
 
-    const orderBy: Record<string, string> =
+    const orderBy: any =
       sort === "price-low"
         ? { price: "asc" }
         : sort === "price-high"
@@ -152,7 +152,7 @@ export async function POST(req: Request) {
   } catch (error) {
     if (error instanceof z.ZodError) {
       return NextResponse.json(
-        { error: error.errors[0].message },
+        { error: error.issues[0]?.message || "Validation error" },
         { status: 400 }
       );
     }

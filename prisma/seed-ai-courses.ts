@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient, QuestionType } from "@prisma/client";
 import bcrypt from "bcryptjs";
 
 const prisma = new PrismaClient();
@@ -158,7 +158,7 @@ async function main() {
         await prisma.lesson.create({ data: { title: md.lessons[li].title, content: md.lessons[li].content, position: li, isFree: li === 0, moduleId: mod.id } });
       }
       if (md.quiz) {
-        await prisma.quiz.create({ data: { title: md.quiz.title, passMark: md.quiz.passMark, moduleId: mod.id, questions: { create: md.quiz.questions.map((q, qi) => ({ text: q.text, type: q.type, points: 1, position: qi, options: { create: q.options } })) } } });
+        await prisma.quiz.create({ data: { title: md.quiz.title, passMark: md.quiz.passMark, moduleId: mod.id, questions: { create: md.quiz.questions.map((q, qi) => ({ text: q.text, type: q.type as QuestionType, points: 1, position: qi, options: { create: q.options } })) } } });
       }
     }
 
